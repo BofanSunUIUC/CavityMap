@@ -26,7 +26,7 @@ public class CavityMap {
 			    String left = grid[i].substring(j - 1, j);
 			    String right = grid[i].substring(j + 1, j + 2);
 			    if(mid.compareTo(top) > 0 && mid.compareTo(bot) > 0 && mid.compareTo(left) > 0 && mid.compareTo(right) > 0){
-				System.out.print("X");
+				System.out.print("X"); //Any number compareTo X will return negative value
 			    }
 			    else{
 				System.out.print(grid[i].substring(j, j + 1));
